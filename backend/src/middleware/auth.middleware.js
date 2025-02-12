@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
-export const protectRoute = async (req,resizeBy,next) => {
+export const protectRoute = async (req,res) => {
     try {
         const token = req.cookies.jwt; // "jwt" name was made in lib/utils.js
 
